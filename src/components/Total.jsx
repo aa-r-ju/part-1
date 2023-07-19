@@ -1,7 +1,6 @@
 import React from 'react'
 
  const Total = (props) => {
-    // let total //= props.total[0] + props.total[1] + props.total[2]
     let val = 0;
     for(let i = 0; i < props.total.length;i++) {
         let currentValue = props.total[i]; 
@@ -10,7 +9,8 @@ import React from 'react'
     }
     
   return (
-    <div> number of exercises {"    "} {val}   
+    <div> number of exercises {val} 
+
     </div>
 
   )

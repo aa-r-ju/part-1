@@ -1,5 +1,4 @@
 import Header from "./components/Header"
-//import Part from "./components/Content"
 import Total from "./components/Total"
 import Content from "./components/Content"
 const App = () => {
@@ -27,4 +26,3 @@ const App = () => {
 }
 
 export default App
-//number of exercises is 31.
