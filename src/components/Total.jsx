@@ -1,18 +1,14 @@
 import React from 'react'
 
  const Total = (props) => {
-    let val = 0;
-    for(let i = 0; i < props.total.length;i++) {
-        let currentValue = props.total[i]; 
-         val+=currentValue;
-       
-    }
     
   return (
-    <div> number of exercises {val} 
+<div>
+ Number of exercises {props.total.reduce((accumulator,currentVal)=> accumulator+currentVal.exercises,0)}
 
-    </div>
+</div>
 
   )
-}
-export default Total
+  }
+
+  export default Total
